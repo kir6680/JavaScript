@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Test</title>
+</head>
+<body>
+  <div id="content-area" style="background:red;width:200px;height:200px;"></div>
+  <input type="button" value="Change color" onClick="changeColor()"/>
+</body>
+  <script>
+    function changeColor()
+    {
+      var element = document.getElementById('content-area');
+      if(element != null )
+        {
+          if(element.style.background=='red')
+            {
+          element.style.background = "yellow";      
+            }
+          else
+            {
+              element.style.background = "red"; 
+            }
+        }
+    }
+  </script>
+</html>
